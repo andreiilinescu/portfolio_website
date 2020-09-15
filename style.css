@@ -73,30 +73,7 @@ html {
     color: red;
   }
 }
-/* Projects */
-#projects {
-  text-align: center;
-  padding-bottom: 15vh;
-  background-color: #161616;
-}
-#projects li {
-  margin-top: 5vh;
-  list-style: none;
-}
-#projects a {
-  text-decoration: none;
-  font-size: 1.6vw;
-  color: #dc143c;
-  text-shadow: 3px 3px 2px #000000;
-}
-#projects h2 {
-  font-size: 2vw;
-  color: white;
-  text-shadow: 3px 3px 2px #000000;
-}
-#projects a:hover {
-  color: #14dbb3;
-}
+
 /* Contact */
 #contact {
   padding-top: 5vh;
