@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: MuseoSans-500, Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #161616;
+}
+#title {
+  color: white;
+  text-shadow: 3px 3px 2px #000000;
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 2vw;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4vw;
+}
+#projects li {
+  list-style-type: none;
+  font-family: MuseoSans-500, Arial, sans-serif;
+  margin-top: 2vh;
+}
+#projects a {
+  color: #dc143c;
+  text-shadow: 3px 3px 2px #000000;
+  text-decoration: none;
+}
+#projects a:hover{
+    color: #14dbb3;
+}
