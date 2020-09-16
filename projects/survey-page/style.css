@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: MuseoSans-500, Arial, sans-serif;
+  }
+body{
+    background-color: #161616;
+}
+h1{
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px 2px #000000;
+    font-size: 3vw;
+}

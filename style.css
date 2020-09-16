@@ -21,13 +21,11 @@ html {
 #welcome-section h1 {
   font-size: 2.7vw;
   color: white;
-  font-family: MuseoSans-500, Arial, sans-serif;
   font-weight: 500;
 }
 #welcome-section p {
   font-size: 1.8vw;
   color: white;
-  font-family: MuseoSans-500, Arial, sans-serif;
 }
 #welcome-section a {
   margin-top: 5vh;
