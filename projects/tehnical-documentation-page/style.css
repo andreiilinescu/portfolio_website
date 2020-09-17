@@ -1,0 +1,93 @@
+#navbar {
+  position: fixed;
+  min-width: 250px;
+  top: 0px;
+  left: 0px;
+  width: 290px;
+  height: 100%;
+  border-right: solid;
+  border-color: ;
+}
+* {
+  color: #3299cc;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+  margin: 1.5vw;
+}
+#navbar > header {
+  font-size: 25px;
+}
+#navbar > ul > li {
+  list-style: none;
+
+  margin-bottom: 40px;
+  font-size: 30px;
+  border-bottom: 2px solid;
+}
+#navbar > ul > li > a {
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  padding: 10px 20px;
+  display: block;
+}
+#navbar > ul {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+#main-doc {
+  margin-left: 330px;
+}
+main header {
+  text-align: left;
+  font-size: 35px;
+  font-weight: 550;
+}
+main p {
+  font-size: 21px;
+  color: rgb(40, 40, 40);
+  line-height: 175%;
+}
+code {
+  font-size: 17px;
+  display: block;
+  text-align: left;
+  background-color: rgb(240, 240, 240);
+  line-height: 130%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 5px;
+  color: black;
+  font-weight: 500;
+}
+main li {
+  font-size: 19px;
+  color: rgb(40, 40, 40);
+}
+h2 {
+  font-size: 24px;
+  color: orange;
+}
+#night {
+  cursor: pointer;
+}
+.darkNavText {
+  color: rgb(240, 240, 240) !important;
+}
+.darkBackground {
+  background-color: #161616 !important;
+}
+.codeColor {
+  color: white !important;
+}
+@media only screen and max-width(600px) {
+  #navbar {
+    display: none;
+  }
+  #main-doc {
+    margin-left: 20px;
+  }
+}

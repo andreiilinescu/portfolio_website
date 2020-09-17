@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+  ></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>C++ Documentation</header>
+    <ul>
+      <li><a class="nav-link" id="night">Night/Light Mode</a></li>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+      <li><a class="nav-link" href="#Comments">Comments</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>
+        C++ is one of the world's most popular programming languages.
+        <br />
+        C++ can be found in today's operating systems, Graphical User
+        Interfaces, and embedded systems.
+        <br />
+        C++ is an object-oriented programming language which gives a clear
+        structure to programs and allows code to be reused, lowering development
+        costs.
+        <br />
+        C++ is portable and can be used to develop applications that can be
+        adapted to multiple platforms.
+      </p>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header>
+      <p>To start using C++, you need two things:</p>
+      <ul>
+        <li>A text editor, like Notepad, to write C++ code</li>
+        <li>
+          A compiler, like GCC, to translate the C++ code into a language that
+          the computer will understand
+        </li>
+      </ul>
+      <p>
+        There are many text editors and compilers to choose from. In this
+        tutorial, we will use an IDE . An IDE (Integrated Development
+        Environment) is used to edit AND compile the code.<br />
+
+        Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These
+        are all free, and they can be used to both edit and debug C++ code.<br />
+        We will use <strong>Code::Blocks</strong> in our tutorial, which we
+        believe is a good place to start.<br />
+        Let's create our first C++ file. Open Codeblocks and go to
+        <strong>File > New > Empty File</strong>. Write the following
+        <strong>C++</strong> code and save the file as
+        <strong>myfirstprogram.cpp</strong> (File > Save File as):
+      </p>
+      <code>
+        #include &ltiostream&gt
+        <br />
+        using namespace std;
+        <br />
+        int main()
+        <br />
+        {
+        <br />
+        cout << "Hello World!" ; <br />
+        return 0;
+        <br />
+        }
+      </code>
+    </section>
+    <section class="main-section" id="Comments">
+      <header style="color: green">Comments</header>
+      <p>
+        Comments can be used to explain C++ code, and to make it more readable.
+        It can also be used to prevent execution when testing alternative code.
+        Comments can be singled-lined or multi-lined.
+        <br />
+        Single-line comments start with two forward slashes (<b
+          style="color: green"
+          >//</b
+        >).
+        <br />
+        Any text between <b style="color: green">//</b> and the end of the line
+        is ignored by the compiler (will not be executed).
+        <br />
+        This example uses a single-line comment before a line of code:
+      </p>
+      <code>
+        <span style="color: green"> // This is a comment</span>
+        <br />
+        cout << "Hello World!" ;
+      </code>
+      <p>
+        This example uses a single-line comment at the end of a line of code:
+      </p>
+      <code>
+        cout << "Hello World!" ;
+        <span style="color: green">// This is a comment </span>
+      </code>
+      <p>
+        Multi-line comments start with <bold style="color: green">/*</bold> and
+        ends with <bold style="color: green">*/</bold>.
+        <br />
+        Any text between <bold style="color: green">/*</bold> and
+        <bold style="color: green">*/</bold> will be ignored by the compiler:
+      </p>
+      <code>
+        <span style="color: green">
+          /* The code below will print the words Hello World! to the screen, and
+          it is amazing */</span
+        >
+        <br />
+        cout << "Hello World!" ;
+      </code>
+    </section>
+    <section class="main-section" id="Variables">
+      <header style="color: orange">Variables</header>
+      <p>
+        Variables are containers for storing data values.
+        <br />
+        In C++, there are different types of variables (defined with different
+        keywords), for example:
+      </p>
+      <ul>
+        <li>
+          <span style="color: steelblue">int</span> - stores integers (whole
+          numbers), without decimals, such as 123 or -123
+        </li>
+        <li>
+          <span style="color: darkgreen">double</span> - stores floating point
+          numbers, with decimals, such as 19.99 or -19.99
+        </li>
+        <li>
+          <span style="color: indigo">char</span> - stores single characters,
+          such as 'a' or 'B'. Char values are surrounded by single quotes
+        </li>
+        <li>
+          <span style="color: LightSalmon">string</span> - stores text, such as
+          "Hello World". String values are surrounded by double quotes
+        </li>
+        <li>
+          <span style="color: red">bool</span> - stores values with two states:
+          true or false
+        </li>
+      </ul>
+      <h2>Declaring (Creating) Variables</h2>
+      <p>
+        To create a variable, you must specify the type and assign it a value:
+      </p>
+      <code>type variable = value; </code>
+      <p>
+        Where type is one of C++ types (such as <b>int</b>), and variable is the
+        name of the variable (such as x or myName). The
+        <strong>equal sign</strong> is used to assign values to the variable.<br />
+        To create a variable that should store a number, look at the following
+        example:
+      </p>
+      <code
+        ><span style="color: steelblue">int</span> myNum = 15;<br />
+        cout << myNum;
+      </code>
+      <p>
+        You can also declare a variable without assigning the value, and assign
+        the value later:
+      </p>
+      <code
+        ><span style="color: steelblue">int</span> myNum;<br />
+        myNum = 15;<br />
+        cout << myNum;
+      </code>
+      <p>
+        Note that if you assign a new value to an existing variable, it will
+        overwrite the previous value:
+      </p>
+      <code>
+        <span style="color: steelblue">int</span> myNum = 15;
+        <span style="color: green">// myNum is 15</span><br />
+        myNum = 10; <span style="color: green">// Now myNum is 10</span><br />
+        cout &lt&lt myNum; <span style="color: green">// Outputs 10</span>
+      </code>
+      <h2>Other Types</h2>
+      <p>A demonstration of other data types:</p>
+      <code
+        ><span style="color: steelblue">int</span> myNum = 5;
+        <span style="color: green"
+          >// Integer (whole number without decimals)</span
+        ><br />
+        <span style="color: darkgreen">double</span> myFloatNum = 5.99;
+        <span style="color: green"
+          >// Floating point number (with decimals)</span
+        ><br />
+        <span style="color: indigo">char</span> myLetter = 'D';
+        <span style="color: green">// Character</span><br />
+        <span style="color: LightSalmon">string</span> myText = "Hello";
+        <span style="color: green">// String (text)</span><br />
+        <span style="color: red">bool</span> myBoolean = true;
+        <span style="color: green">// Boolean (true or false)</span>
+      </code>
+    </section>
+    <section class="main-section" id="Reference">
+      <header>Reference</header>
+      <p>
+        All the information in this page is taken from the
+        <a href="https://www.w3schools.com/cpp/" target="_blank"
+          >w-3 schools c++ tutorial</a
+        >
+      </p>
+    </section>
+  </main>
+  <script type="text/javascript">
+    var x = true;
+    $("#night").click(() => {
+      if (x == true) {
+        $("body").css("background-color", "#161616");
+        $(".nav-link").css("color", "rgb(215,215,215)");
+        $("main p").css("color", "rgb(215,215,215)");
+        $("code").css("background-color", "rgb(40,40,40)");
+        $("code").css("color", "white");
+        $("main li").css("color", "rgb(215,215,215)");
+        $("#navbar").css("color", "crimson");
+        $("#navbar li").css("color", "crimson");
+        $("#navbar header").css("color", "crimson");
+        $("strong").css("color", "crimson");
+        $("#Introduction header").css("color", "crimson");
+        $("#Hello_World header").css("color", "crimson");
+        Hello_World;
+        x = false;
+      } else {
+        $("body").css("background-color", "#ffffff");
+        $(".nav-link").css("color", "rgb(40,40,40)");
+        $("main p").css("color", "rgb(40,40,40)");
+        $("code").css("background-color", "rgb(215,215,215)");
+        $("code").css("color", "black");
+        $("main li").css("color", "rgb(40,40,40)");
+        $("#navbar").css("color", "#3299cc");
+        $("#navbar li").css("color", "#3299cc");
+        $("#navbar header").css("color", "#3299cc");
+        $("strong").css("color", "#3299cc");
+        $("#Introduction header").css("color", "#3299cc");
+        $("#Hello_World header").css("color", "#3299cc");
+        x = true;
+      }
+    });
+  </script>
+</body>
