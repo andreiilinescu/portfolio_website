@@ -219,9 +219,25 @@
     </section>
   </main>
   <script type="text/javascript">
-    var x = true;
+  //initialize
+    var x = false;
+    $("body").css("background-color", "#161616");
+    $(".nav-link").css("color", "rgb(215,215,215)");
+    $("main p").css("color", "rgb(215,215,215)");
+    $("code").css("background-color", "rgb(40,40,40)");
+    $("code").css("color", "white");
+    $("main li").css("color", "rgb(215,215,215)");
+    $("#navbar").css("color", "crimson");
+    $("#navbar li").css("color", "crimson");
+    $("#navbar header").css("color", "crimson");
+    $("strong").css("color", "crimson");
+    $("#Introduction header").css("color", "crimson");
+    $("#Hello_World header").css("color", "crimson");
+  //on click
     $("#night").click(() => {
+        
       if (x == true) {
+          //night
         $("body").css("background-color", "#161616");
         $(".nav-link").css("color", "rgb(215,215,215)");
         $("main p").css("color", "rgb(215,215,215)");
@@ -234,9 +250,9 @@
         $("strong").css("color", "crimson");
         $("#Introduction header").css("color", "crimson");
         $("#Hello_World header").css("color", "crimson");
-        Hello_World;
         x = false;
       } else {
+          //light
         $("body").css("background-color", "#ffffff");
         $(".nav-link").css("color", "rgb(40,40,40)");
         $("main p").css("color", "rgb(40,40,40)");
