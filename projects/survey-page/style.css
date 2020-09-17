@@ -1,38 +1,79 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: MuseoSans-500, Arial, sans-serif;
-  }
-body{
-    background-color: #161616;
+  margin: 0;
+  padding: 0;
+  font-family: MuseoSans-500, Arial, sans-serif;
 }
-h1{
-    text-align: center;
-    color:white;
-    text-shadow: 3px 3px 2px #000000;
-    font-size: 4vw;
-    margin-top:5vh;
+body {
+  background-color: #161616;
 }
-form{
-    display: flex;
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 2px #000000;
+  font-size: 4vw;
+  margin-top: 5vh;
+}
+form {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10vh;
 }
-label{
-    color:white;
-    text-shadow: 3px 3px 2px #000000;
-    font-size: 2.5vw;
-    margin-top: 3vh;
+label {
+  color: white;
+  text-shadow: 3px 3px 2px #000000;
+  font-size: 2.5vw;
+  margin-top: 3vh;
 }
-input{
-    width: 10vw;
-    height: 3vh;
-    font-size: 1.8vw;
+input {
+  width: 20vw;
+  height: 4vh;
+  font-size: 1.8vw;
+  background-color: #161616;
+  color:white;
+  text-shadow: 3px 3px 2px #000000;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em; 
+  box-sizing: border-box;
 }
-#submit{
-    margin-top: 3vh ;
-    font-size: 1.5vw;
-    height: 4vh;
+input:focus{
+    color:#161616;
+    text-shadow: none;
+    background-color:#FFFFFF;
+}
+
+textarea {
+  width: 25vw;
+  height: 12vh;
+  font-size: 1.2vw;
+  background-color: #161616;
+  color:white;
+  text-shadow: 3px 3px 2px #000000;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em; 
+  box-sizing: border-box;
+}
+textarea:focus{
+    color:#161616;
+    text-shadow: none;
+    background-color:#FFFFFF;
+}
+#submit {
+  margin-top: 3vh;
+  font-size: 1.5vw;
+  height: 4vh;
+  background-color: #161616;
+  color: #ffffff;
+  text-shadow: 3px 3px 2px #000000;
+  
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em; 
+  box-sizing: border-box;
+  text-decoration: none;
+}
+#submit:hover {
+    color:#161616;
+    text-shadow: none;
+    background-color:#FFFFFF;
 }
