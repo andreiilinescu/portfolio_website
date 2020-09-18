@@ -1,0 +1,41 @@
+/* background */
+#root{ 
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+background: linear-gradient(124deg,DarkTurquoise,DeepSkyBlue,DodgerBlue,LightCoral,LightPink,Aquamarine,Aqua);
+background-size: 800% 800%;
+  animation: rainbow 19s ease infinite;
+}
+@keyframes rainbow { 
+    0%{background-position:0% 73%}
+    50%{background-position:100% 15%}
+    100%{background-position:0% 73%}
+}
+#quote-box{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background:rgba(255,255,255,0.5);
+  padding-left:4vw;
+  padding-right:4vw;
+  padding-top:2vh;
+  padding-bottom:2vh;
+  
+}
+#text{
+  padding-bottom:3vh;
+ font-size:2vw;
+}
+#author{
+  font-size:1.3vw;
+}
+button{
+  float:right;
+  font-size:1.1vw!important;
+}

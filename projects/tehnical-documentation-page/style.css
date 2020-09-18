@@ -6,7 +6,6 @@
   width: 290px;
   height: 100%;
   border-right: solid;
-  border-color: ;
 }
 * {
   color: #3299cc;
@@ -81,7 +80,7 @@ h2 {
 .codeColor {
   color: white !important;
 }
-@media only screen and max-width(600px) {
+@media only screen and (max-width:600px) {
   #navbar {
     display: none;
   }
