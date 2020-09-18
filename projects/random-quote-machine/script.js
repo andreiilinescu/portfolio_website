@@ -6577,14 +6577,18 @@ class Site extends React.Component {
 
 
       quote: "",
-      autor: "" };
+      autor: "" ,
+      theme:["dark","light"],
+      index:1};
 
     this.newQuote = this.newQuote.bind(this);
+    this.changeTheme=this.changeTheme.bind(this);
   }
   componentDidMount() {
     let x = Math.floor(Math.random() * this.state.allq.length);
     let o = this.state.allq[x].text;
     let v = this.state.allq[x].author;
+    $('#root').addClass('dark');
     this.setState({
       quote: o,
       author: v });
@@ -6597,9 +6601,17 @@ class Site extends React.Component {
     this.setState({
       quote: o,
       author: v });
-
-
-
+  }
+  changeTheme(){
+    $("#root").removeClass();
+    let newIndex;
+    if(this.state.index==this.state.theme.length-1)newIndex=0;
+    else newIndex=this.state.index+1;
+    this.setState({
+      index:newIndex
+    });
+    console.log(this.state.index);
+    $('#root').addClass(this.state.theme[this.state.index]);
   }
   render() {
     return (
@@ -6607,8 +6619,10 @@ class Site extends React.Component {
       React.createElement("p", { id: "text" }, this.state.quote),
       React.createElement("p", { id: "author" }, this.state.author),
       React.createElement("button", { id: "new-quote", class: "btn", onClick: this.newQuote }, "New Quote"),
-      React.createElement("a", { id: "tweet-quote", a: true, href: `https://twitter.com/intent/tweet?text="${this.state.quote}"--${this.state.author}`, target: "_blank" }, React.createElement("button", { class: "btn" }, "Tweet"))));
-
+      React.createElement("a", { id: "tweet-quote", a: true, href: `https://twitter.com/intent/tweet?text="${this.state.quote}"--${this.state.author}`, target: "_blank" }, React.createElement("button", { class: "btn" }, "Tweet")),
+      React.createElement("button",{ id:"theme",class:"btn", onClick:this.changeTheme},'Change Theme')
+      ));
+      
 
   }}
 
