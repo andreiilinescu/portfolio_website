@@ -1,0 +1,28 @@
+body {
+  background-color: #161616;
+}
+svg {
+  background: #dc143c;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.dot {
+  stroke: #000;
+  opacity: 1;
+}
+#tooltip {
+  background: rgba(22, 22, 22, 0.8);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-size: 18px;
+  padding: 10px 20px;
+  pointer-events: none;
+  position: absolute;
+  text-align: left;
+  width: 250px;
+}
