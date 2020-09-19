@@ -1,0 +1,40 @@
+body{
+  background: #161616;
+    text-shadow:1px 1px black;
+}
+#root{
+   position:fixed;
+  top:40%;
+  left:50%;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  color:#EDF5E1;
+  width:30vw;
+  font-size: 1vw;
+}
+.col-6{
+  margin-bottom:2vh;
+}
+button{
+  background:#dc143c;
+  border-color:#dc143c;
+   color:#EDF5E1;
+  font-size:1.3vw;
+}
+
+#time-left{
+  font-size:3vw;
+}
+h2{
+  font-size:2.5vw!important;
+}
+#session-label{
+  padding-right: 1vw;
+}
+#session-length{
+  font-size: 2vw;
+}
+#break-length{
+  font-size: 2vw;
+}
+
