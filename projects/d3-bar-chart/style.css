@@ -1,0 +1,16 @@
+#all {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #dc143c;
+}
+#title {
+  font-size: 2vw;
+}
+.bar:hover {
+  fill: black !important;
+}
+body {
+  background-color: #161616;
+}
