@@ -1,0 +1,43 @@
+.head{
+   text-align: center;
+}
+body{
+   background:#161616;
+   color:white;
+}
+svg{
+  margin:auto;
+  display:block;
+ 
+}
+.cell:hover{
+  stroke:black;
+  stroke-width:2px;
+  stroke-opacity:0.9;
+}
+#tooltip {
+  background: rgba(0,140,90,0.6);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  text-shadow:1px 1px black;
+  font-size: 18px;
+  padding: 10px 20px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  width: 250px;
+}
+#slegend{
+   position:fixed;
+  left:80%;
+  top:50%;
+  transform:translate(-0%,50%);
+  background:rgba(100,0,0,0.5);
+}
+h1{
+  font-size: 3vw;
+}
+h3{
+  font-size: 2vw;
+}
