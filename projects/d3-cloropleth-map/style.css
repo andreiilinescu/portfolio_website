@@ -1,0 +1,29 @@
+#head{
+  text-align:center;
+}
+#container{
+  margin:auto;
+  display:block;
+  
+}
+body{
+    background: #161616;
+
+}
+
+#tooltip {
+  background-color: #403233;
+  border: none;
+  border-radius: 2px;
+  color: #fc9272;
+  text-shadow:1px 1px black;
+  font-size: 18px;
+  padding: 10px 20px;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  width: 250px;
+}
+.tick{
+  color:white;
+}
