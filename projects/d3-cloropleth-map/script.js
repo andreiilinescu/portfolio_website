@@ -108,7 +108,6 @@ d3.json(usaCountyData).then(countyData => {
     console.log(colors.range());
     legend.
     selectAll(".legend-item").
-    style("fill","white").
     data(
     colors.range().map(i => {
       i = colors.invertExtent(i);
