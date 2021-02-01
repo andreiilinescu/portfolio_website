@@ -71,6 +71,29 @@ html {
     color: red;
   }
 }
+.tp2{
+  display:inline-block;
+}
+.tp{
+  animation:tp 3.5s steps(40, end), blink 0.75s step-end infinite; 
+  border-right: .1em solid crimson;
+  width: max-content;
+  white-space: nowrap;
+  margin-top: 5vh;
+  text-align: center;
+  overflow: hidden;
+  padding-right: 0.1em;
+}
+
+@keyframes tp{ 
+  from { width: 0 }
+  to { width: 100% }
+} 
+@keyframes blink{
+  0% {border-color: transparent;}
+  50% {border-color: crimson;}
+  100% {border-color:transparent;}
+}
 
 /* Contact */
 #contact {

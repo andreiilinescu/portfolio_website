@@ -1,0 +1,101 @@
+body{
+  background-color:#161616;
+}
+*{
+  font-family: MuseoSans-500, Arial, sans-serif !important;
+}
+#todo{
+  text-align: center;
+  margin-top: 5vh;
+  color:white;
+}
+#title{
+  font-size: 2.5vw;
+}
+.rnbw:hover{
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name:rainbow;
+}
+@keyframes rainbow{
+  0% {color:red}
+  15% {color:orange}
+  30% {color:yellow}
+  45% {color:green}
+  60% {color:blue}
+  75% {color:purple}
+  90% {color:pink}
+  100% {color:red}
+}
+.frm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+input{
+  color:white;
+  font-size: 1vw;
+  background: #161616;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em;
+}
+input:focus{
+  background-color: white;
+  color: #161616;
+  
+}
+li{
+  display:inline;
+  margin-right:1vw;
+  font-size: 1vw;
+}
+#submit{
+  font-size: 0.9vw;
+  box-sizing: border-box;
+  margin-left:0.2vw;
+  border-radius: 8px;
+  border-width:1.5px ;
+  padding: 4px 16px ;
+}
+#submit:hover{
+  background-color: #161616;
+  color:white;
+}
+#clear{
+  font-size: 0.9vw;
+  background-color: crimson;
+  border: solid;
+  border-radius: 8px;
+  border-width: 1.5px;
+  color:white;
+  padding: 4px 16px ;
+  margin-left:0.2vw;
+  box-sizing: border-box;
+}
+#clear:hover{
+  background-color: #14DBB3 ;
+}
+.del_btn{
+  font-size: 0.5vw;
+  background-color: crimson;
+  border:none;
+  color:white;
+  padding: 5px 17px ;
+  margin-left:0.2vw;
+  box-sizing: border-box;
+}
+/*
+margin-top: 3vh;
+  font-size: 1.5vw;
+  height: 4vh;
+  background-color: #161616;
+  color: #ffffff;
+  text-shadow: 3px 3px 2px #000000;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+
+*/
