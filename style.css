@@ -75,7 +75,7 @@ html {
   display:inline-block;
 }
 .tp{
-  animation:tp 3.5s steps(40, end), blink 0.75s step-end infinite; 
+  animation:tp 2.5s steps(40, end), blink 0.75s step-end infinite; 
   border-right: .1em solid crimson;
   width: max-content;
   white-space: nowrap;
