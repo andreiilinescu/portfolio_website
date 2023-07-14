@@ -3,9 +3,12 @@
   padding: 0;
   font-family: MuseoSans-500, Arial, sans-serif;
 }
-html {
+html body{
   scroll-behavior: smooth;
+  margin: 0;
+  height: 100%
 }
+
 
 /* Welcome */
 #welcome-section {
@@ -15,7 +18,6 @@ html {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #161616;
   text-shadow: 3px 3px 2px #000000;
 }
 #welcome-section h1 {
@@ -31,51 +33,19 @@ html {
   margin-top: 5vh;
   font-size: 2vw;
   text-decoration: none;
-  color: #dc143c;
-
+  color: #bd2745;
   padding: 0.8vh 0.6vw;
 }
 #build {
   font-size: 2vw;
 }
-#welcome-section a:hover {
-  color: #14dbb3;
-}
-.rainbow {
-  animation: rainbow 5s infinite;
-  animation-duration: 3.5s;
-}
-@keyframes rainbow {
-  0% {
-    color: red;
-  }
-  14% {
-    color: orange;
-  }
-  28% {
-    color: yellow;
-  }
-  42% {
-    color: green;
-  }
-  56% {
-    color: blue;
-  }
-  70% {
-    color: indigo;
-  }
-  84% {
-    color: violet;
-  }
-  100% {
-    color: red;
-  }
-}
+
+
 .tp2{
   display:inline-block;
 }
 .tp{
-  animation:tp 2.5s steps(40, end), blink 0.75s step-end infinite; 
+  animation:tp 3s steps(40, end), blink 0.75s step-end infinite; 
   border-right: .1em solid crimson;
   width: max-content;
   white-space: nowrap;
@@ -100,7 +70,7 @@ html {
   padding-top: 5vh;
   text-align: CENTER;
   padding-bottom: 15vh;
-  background-color: #161616;
+  
   color: white;
   text-shadow: 3px 3px 2px #000000;
 }
@@ -109,14 +79,27 @@ html {
   margin-bottom: 2vh;
 }
 #contact a {
-  font-size: 2vw;
+  font-size: 2.4vw;
   margin-right: 1vw;
   text-decoration: none;
   color: crimson;
 }
-#contact a:hover {
-  color: #14dbb3;
+
+
+/* ---- particles.js container ---- */
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
-#x {
-  color: white !important;
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url("");
+  background-size: cover; 
+  background-position: 50% 50%;
+  z-index: -10;
 }
