@@ -8,7 +8,7 @@ html body{
   margin: 0;
   height: 100%;
   font-size:1vmin;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: transparent !important;
 }
 html,
@@ -17,63 +17,6 @@ body {
     * {
         cursor: none;        
     }
-}
-
-
-/* Welcome */
-#welcome {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  text-shadow: 3px 3px 2px #000000;
-}
-#welcome h1 {
-  font-size: 6rem;
-  color: white;
-  font-weight: 700;
-  text-shadow: 0 1px 10px #fffef4;
-}
-#name-1{
-  margin-right: 25vh;
-}
-#name-2{
-  margin-left:17.5vh;
-}
-#welcome-section a {
-  margin-top: 5vh;
-  font-size: 2vw;
-  text-decoration: none;
-  color: #bd2745;
-  padding: 0.8vh 0.6vw;
-}
-
-.description-div{
-  display:inline-block;
-}
-.description{
-  animation:tp 3s steps(40, end), blink 0.75s step-end infinite; 
-  border-right: .1em solid white;
-  width: max-content;
-  white-space: nowrap;
-  text-align: center;
-  overflow: hidden;
-  font-style:italic;
-  padding-right: 0.2em;
-  font-size: 1.4vw;
-  color:white;
-}
-
-@keyframes tp{ 
-  from { width: 0 }
-  to { width: 100% }
-} 
-@keyframes blink{
-  0% {border-color: transparent;}
-  50% {border-color: white;}
-  100% {border-color:transparent;}
 }
 
 /* Contact */
@@ -97,30 +40,9 @@ body {
 }
 
 
-/* ---- gradient background ---- */
 
-#gradient-div {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  background-size: cover; 
-  background-position: 50% 50%;
-  z-index: -10;
-  filter: url(#noiseFilter)  contrast(1.1);
-    mix-blend-mode: overlay;
-}
-#gradient-canvas {
-  width:100%;
-  height:100%;
-  display: block;
-  --gradient-color-1: #000000; 
-  --gradient-color-2: #ff7700; 
-  --gradient-color-3: #8b6b3f;  
-  --gradient-color-4: #1f0038;
-  
-}
 /* ---- custom cursor ---- */
+
 .cursor-dot,
 .cursor-dot-outline {
     pointer-events: none;
@@ -151,7 +73,7 @@ body {
 #noise-div{
   background-image: url(src/100-90-7-monochrome.png);
   background-repeat: repeat;
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   z-index: -7;

@@ -7,30 +7,39 @@
   <title>Andrei Ilinescu | Portfolio</title>
   <link rel="icon" type="image/x-icon" href="/src/flavicon.png">
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="public/welcome.css" />
+  <link rel="stylesheet" type="text/css" href="public/contact.css" />
+  <link rel="stylesheet" type="text/css" href="public/info.css" />
   <script src="https://kit.fontawesome.com/a6593d3fec.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
 </head>
 
 <body>
+  
+  
 
-  <div id="gradient-div"><canvas id="gradient-canvas" data-transition-in /></div>
-  <div id="noise-div"></div>
-  <div class="cursor-dot-outline"></div>
-  <div class="cursor-dot"></div>
-  <filter id='noiseFilter'>
-    <feTurbulence type='turbulence' baseFrequency='.75' numOctaves='2' stitchTiles='stitch' />
-  </filter>
-  <nav>
-
-  </nav>
   <section id="welcome">
+    <div id="gradient-div"><canvas id="gradient-canvas" data-transition-in ></div>
+    <div id="noise-div"></div>
     <h1 id="name-1">ANDREI</h1>
     <h1 id="name-2">ILINESCU</h1>
+    <div class="gradient-transition"></div>
   </section>
-  <section id="info">
 
+
+  <section id="info">
+    <div class="scroll">
+      <div>
+           Special Offer!<span> Blah Blah Blah Blah! Blah!</span>Special Offer!<span> Blah Blah Blah Blah! Blah!</span>
+      </div>
+      <div>
+           Special Offer!<span> Blah Blah Blah Blah! Blah!</span>Special Offer!<span>Blah Blah Blah Blah! Blah!</span>
+      </div>
+   </div>
   </section>
+
+ 
   <section id="contact">
     <h2>You can reach me at:</h2>
     <div class="contacts">
@@ -40,6 +49,11 @@
     </div>
   </section>
 
+
+
+
+  <div class="cursor-dot-outline"></div>
+  <div class="cursor-dot"></div>
 </body>
 
 <script type="module" src="src/importgradient.js"></script>
