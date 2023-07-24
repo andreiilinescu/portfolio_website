@@ -1,21 +1,24 @@
 :root {
   --bg: #030303;
 }
-
+.\[color-scheme\:dark\] {
+  color-scheme: dark;
+}
 
 * {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html body{
   scroll-behavior: smooth;
   margin: 0;
   height: 100%;
   font-size:1vmin;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: transparent !important;
   color:white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 html,
 body {
@@ -24,6 +27,8 @@ body {
         cursor: none;        
     }
 }
+
+
 
 
 /* ---- custom cursor ---- */
@@ -82,16 +87,15 @@ body {
 
 /* --- Work ---*/
 #work{
+  background-color: var(--bg);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: var(--bg);
   font-size: x-large;
   line-height: 150%;
-
 }
 
 #work a{
@@ -128,19 +132,33 @@ body {
 #work h1{
   font-size: 2em
 }
-#work h3{
-  font-size: 1.5em;
-}
+
 #work li{
   font-size: larger;
 }
 
+#info .bg-left{
+  background-image: url("/src/bg-left2.png");
+  position: absolute;
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 
+}
+#info .bg{
+  padding-top: 4vh;
+  background-color: var(--bg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+}
 
 
 /* --- Info --- */
 #info{
-  background-color: var(--bg);
   width: 100vw;
   height: 100vh;    
 }
@@ -203,6 +221,10 @@ text-shadow: 0 2px 10px #fffef4;
 
 }
 
+.services-item:nth-child(even) .service-line-inner {
+  animation-name: ticker-reverse;
+}
+
 @keyframes ticker {
 0% {
   transform: translateX(0);
@@ -211,6 +233,15 @@ text-shadow: 0 2px 10px #fffef4;
 transform: translateX(calc(-100% / 4));
 }
 
+}
+
+@keyframes ticker-reverse{
+  0% {
+    transform: translateX(calc(-100% / 4));
+}
+100% {
+  transform: translateX(0);
+}
 }
 
 
@@ -236,4 +267,114 @@ transform: translateX(calc(-100% / 4));
   margin-right: 1vw;
   text-decoration: none;
   color: crimson;
+}
+
+
+
+
+/* ---- Footer ----*/
+
+#footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 100%;
+  background-color: var(--bg);
+
+  padding-bottom: 5vh;
+}
+
+#footer .headline{
+  padding-top: 2vh;
+  margin-left: 10vw;
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+#footer .content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2vh;
+    margin-left: 10vw;
+}
+
+#footer .col{
+  flex-direction: column;
+  display:flex;
+  align-items: center;
+  width: 33%;
+}
+
+
+#footer .col-left{
+  flex-direction: column;
+  display:flex;
+  width: 25%;
+}
+
+#footer .description{
+  font-size: 1.1rem;
+  opacity: 0.4;
+}
+
+#footer .email{
+  font-size: 1.4rem;
+  margin-top:1vh;
+  opacity: 0.8;
+  
+}
+#footer .email a{
+  text-decoration: none;
+  color: white;
+}
+#footer .email a:hover::after{
+  transform: translateX(60%);
+
+}
+
+#footer .email a::after {
+  display: inline-block;
+  content: url(/src/arrow.svg);
+  transform: translateX(0);
+  height: .7vw;
+  width: .7vw;
+  margin-left: 0.2vw;
+  transition: transform .6s cubic-bezier(.165,.84,.44,1);
+}
+
+#footer .f-title{
+  font-size: 1.4rem;
+  opacity: 0.9;
+
+}
+
+
+#footer .links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+  margin-top: 1vh;
+}
+
+#footer .links a{
+  text-decoration: none;
+  color:white;
+  font-size: 1.8rem;
+  opacity: 0.7;
+  transition: opacity .6s linear;
+  
+}
+#footer .links a:hover{
+  opacity: 1;
+}
+
+
+@media only screen and (max-width: 1024px){
+  #work{
+    font-size: large;
+    height: 95vh;
+  }
+
 }

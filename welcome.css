@@ -1,4 +1,5 @@
 #welcome {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +10,7 @@
 }
 
 #welcome h1 {
-    font-size: 6rem;
+    font-size: 5rem;
     color: white;
     font-weight: 700;
     text-shadow: 0 1px 10px #fffef4;
@@ -31,11 +32,11 @@
     padding: 0.8vh 0.6vw;
 }
 
-.description-div {
+#welcome-section .description-div {
     display: inline-block;
 }
 
-.description {
+#welcome-section .description {
     animation: tp 3s steps(40, end), blink 0.75s step-end infinite;
     border-right: .1em solid white;
     width: max-content;
@@ -91,6 +92,8 @@
 }
 
 #gradient-canvas {
+    position: absolute;
+
     width: 100%;
     height: 100%;
     display: block;
