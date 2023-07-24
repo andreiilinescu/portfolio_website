@@ -132,7 +132,15 @@ body {
 }
 
 
-
+#gradient-canvas-mobile{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background:url(src/mesh-682.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /* ---- transition from welcome ---- */
 .gradient-transition {
