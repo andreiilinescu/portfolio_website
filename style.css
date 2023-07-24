@@ -713,3 +713,12 @@ transform: translateX(calc(-100% / 4));
     margin-left: 0 ;
   }
 }
+
+@media only screen and  (max-width:768px){
+  #gradient-canvas-mobile{
+    display: block !important;
+  }
+  #gradient-canvas{
+    display: none;
+  }
+}
