@@ -31,7 +31,7 @@
 
         const x=detectWebGL();
 
-        if(x==0||x==-1){
+        if(x==0||x==-1||navigator.userAgent.match(/Mobile/)){
             div.innerHTML='<div id="gradient-canvas-mobile"></div>'
         }
 
