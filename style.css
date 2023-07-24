@@ -72,6 +72,66 @@ body {
   height: 100%;
   z-index: -7;
 }
+/* --- Welcome ---*/
+#welcome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  text-shadow: 3px 3px 2px #000000;
+}
+
+#welcome h1 {
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 1px 10px #fffef4;
+}
+
+#name-1 {
+  margin-right: 25vh;
+}
+
+#name-2 {
+  margin-left: 17.5vh;
+}
+
+
+
+
+
+
+
+/* ---- gradient background ---- */
+
+#gradient-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #010101;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -10;
+  mix-blend-mode: overlay;
+}
+
+#gradient-canvas {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  display: block;
+  --gradient-color-1: #000000;
+  --gradient-color-2: #ff7700;
+  --gradient-color-3: #8b6b3f;
+  --gradient-color-4: #1f0038;
+
+}
+
+
 
 
 /* ---- transition from welcome ---- */
@@ -82,7 +142,7 @@ body {
   width: 100%;
   background: linear-gradient(0deg, var(--bg), 0, var(--bg) 10%, var(--bg) 30%, rgba(1, 1, 1, 0));
   z-index: -3;
-  height: 53.33vw;
+  height: 10vh;
 }
 
 /* --- Work ---*/
@@ -249,28 +309,6 @@ transform: translateX(calc(-100% / 4));
 
 
 
-/* ---- Contact ----*/
-#contact {
-  padding-top: 5vh;
-  text-align: CENTER;
-  padding-bottom: 15vh;
-  background-color: var(--bg);
-  color: white;
-  text-shadow: 3px 3px 2px #000000;
-}
-#contact h2 {
-  font-size: 2vw;
-  margin-bottom: 2vh;
-}
-#contact a {
-  font-size: 2.4vw;
-  margin-right: 1vw;
-  text-decoration: none;
-  color: crimson;
-}
-
-
-
 
 /* ---- Footer ----*/
 
@@ -280,7 +318,6 @@ transform: translateX(calc(-100% / 4));
   flex-direction: column;
   min-width: 100%;
   background-color: var(--bg);
-
   padding-bottom: 5vh;
 }
 
@@ -370,11 +407,301 @@ transform: translateX(calc(-100% / 4));
   opacity: 1;
 }
 
+#footer .middle{
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
+}
 
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 901px) and (max-width:1350px){
   #work{
     font-size: large;
     height: 95vh;
   }
+  #footer{
+    padding-bottom: 3vh;
+  }
+  #footer .headline{
+    font-size: 3rem;
+    margin-left: 5vw;
+  }
+  #footer .content{
+    margin-left: 5vw;
+  }
+  #footer .col-left{
+    width: 35%;
+  }
+  #footer .email{
+    font-size: 1.2rem;
+  }
+  #footer .email a::after{
+    width: 1vw;
+    height: 1vw;
+  }
+  #footer .links{
+    width: auto;
+  }
+}
 
+@media only screen and (min-width: 760px) and (max-width:900px){
+  #work{
+    font-size: medium;
+    height: 95vh;
+  }
+  #footer{
+    padding-bottom: 3vh;
+  }
+  #footer .headline{
+    font-size: 2.5rem;
+    margin-left: 5vw;
+  }
+  #footer .content{
+    margin-left: 5vw;
+  }
+  #footer .col-left{
+    width: 30%;
+  }
+  #footer .email{
+    font-size: 1rem;
+  }
+  #footer .email a::after{
+    width: 1vw;
+    height: 1vw;
+  }
+
+  #footer .links{
+    width: auto;
+  }
+}
+
+
+@media only screen and (min-width: 500px) and (max-width:759px){
+  #work{
+    font-size: medium;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  #work .work-column{
+    padding-top: 3vh;
+    padding-left: 5vw;
+  }
+  #footer{
+    padding-bottom: 3vh;
+  }
+  #footer .headline{
+    font-size: 2.2rem;
+    margin-left: 4vw;
+  }
+  #footer .content{
+    margin-left: 4vw;
+  }
+  #footer .col-left{
+    width: 30%;
+  }
+  #footer .email{
+    font-size: 1rem;
+  }
+  #footer .email a::after{
+    display: none;
+  }
+ 
+  #footer .links{
+    width: auto;
+  }
+
+  #welcome h1{
+    font-size: 4rem;
+
+  }
+
+}
+
+@media only screen and (min-width: 385px) and (max-width:499px){
+  #work{
+    font-size: medium;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 9vh;
+    padding-bottom: 15vh;
+  }
+  #work .work-column{
+    padding-top: 3vh;
+    padding-left: 5vw;
+  }
+  #footer{
+    padding-bottom: 3vh;
+  }
+  #footer .headline{
+    font-size: 1.9rem;
+    margin-left: 4vw;
+  }
+  #footer .description{
+    font-size: 0.8rem;
+  }
+  #footer .f-title{
+    font-size:1rem;
+  }
+  #footer .content{
+    margin-left: 4vw;
+  }
+  #footer .col-left{
+    width: 30%;
+  }
+  #footer .email{
+    font-size: 1rem;
+  }
+  #footer .email a::after{
+    display: none;
+  }
+
+  #footer .links{
+    width: auto;
+  }
+
+  #footer .links a{
+    font-size: 1.5rem;
+  }
+
+  #welcome h1{
+    font-size: 4rem;
+
+  }
+
+  #name-1 {
+    margin-right: 0 ;
+  }
+
+  #name-2 {
+    margin-left: 0 ;
+  }
+}
+
+
+@media only screen and (min-width: 345px) and (max-width:384px){
+  #work{
+    font-size: small;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 9vh;
+    padding-bottom: 15vh;
+  }
+  #work .work-column{
+    padding-top: 3vh;
+    padding-left: 5vw;
+  }
+  #footer{
+    padding-bottom: 3vh;
+  }
+  #footer .headline{
+    font-size: 1.9rem;
+    margin-left: 4vw;
+  }
+  #footer .description{
+    font-size: 0.7rem;
+  }
+  #footer .f-title{
+    font-size:0.8rem;
+  }
+  #footer .content{
+    margin-left: 4vw;
+    flex-wrap: wrap;
+  }
+  #footer .col-left{
+    width: 30%;
+  }
+  #footer .email{
+    font-size: 0.8rem;
+  }
+  #footer .email a::after{
+    display: none;
+  }
+
+  #footer .links{
+    width: auto;
+  }
+
+  #footer .links a{
+    font-size: 1.5rem;
+  }
+
+  #welcome h1{
+    font-size: 4rem;
+
+  }
+
+  #name-1 {
+    margin-right: 0 ;
+  }
+
+  #name-2 {
+    margin-left: 0 ;
+  }
+}
+
+@media only screen and  (max-width:344px){
+  #work{
+    font-size: small;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 9vh;
+    padding-bottom: 15vh;
+  }
+  #work .work-column{
+    padding-top: 3vh;
+    padding-left: 5vw;
+  }
+  #footer{
+    padding-bottom: 3vh;
+  }
+  #footer .headline{
+    font-size: 1.9rem;
+    margin-left: 4vw;
+  }
+  #footer .description{
+    font-size: 0.7rem;
+  }
+  #footer .f-title{
+    font-size:0.8rem;
+  }
+  #footer .content{
+    margin-left: 4vw;
+    flex-wrap: wrap;
+  }
+  #footer .col-left{
+    width: 30%;
+  }
+  #footer .email{
+    font-size: 0.8rem;
+  }
+  #footer .email a::after{
+    display: none;
+  }
+
+  #footer .links{
+    width: auto;
+  }
+
+  #footer .links a{
+    font-size: 1.5rem;
+  }
+
+  #welcome h1{
+    font-size: 3.5rem;
+
+  }
+  #info .service-subtitle{
+    font-size: 0.9rem;
+  }
+  #name-1 {
+    margin-right: 0 ;
+  }
+
+  #name-2 {
+    margin-left: 0 ;
+  }
 }
