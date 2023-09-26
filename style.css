@@ -1,5 +1,5 @@
 :root {
-  --bg: #030303;
+  --bg: black;
 }
 .\[color-scheme\:dark\] {
   color-scheme: dark;
